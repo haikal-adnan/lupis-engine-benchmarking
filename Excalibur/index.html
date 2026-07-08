@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excalibur.js Benchmark</title>
+    <style>
+        /* Memastikan tidak ada sisa margin putih di pinggir web */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Mencegah munculnya scrollbar */
+            background-color: #000;
+        }
+        
+        /* Desain UI HUD di pojok kiri atas */
+        #hud-container {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.85); /* Background hitam transparan */
+            border: 1px solid #444;
+            color: #ffffff;
+            padding: 12px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            border-radius: 6px;
+            z-index: 100; /* Agar selalu di atas canvas Excalibur */
+            pointer-events: none; /* Agar klik mouse tembus ke game */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div id="hud-container">
+        <div style="margin-top: 5px;">Objects: <span id="ui-counter" style="color: #ffff00; font-weight: bold;">0</span></div>
+    </div> -->
+
+    <script type="module" src="/benchmark3.js"></script>
+</body>
+</html>
